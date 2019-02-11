@@ -10,7 +10,12 @@
     "db-seed": "mysql -u root -p < schema.sql",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^2.1.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",

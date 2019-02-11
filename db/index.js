@@ -3,8 +3,8 @@ const mysqlConfig = require('./config');
 
 const connection = mysql.createConnection(mysqlConfig);
 
-const getAll = function (callback) {
-  let sqlQuery = 'SELECT * FROM mainViewPics'
+const getHouse = function (homeId, callback) {
+  let sqlQuery = 'SELECT * FROM mainHomeView WHERE id = ' + homeId
   connection.query(sqlQuery, (err, results) => {
     if (err) {
       console.log(err)
@@ -15,5 +15,5 @@ const getAll = function (callback) {
 }
 
 module.exports = {
-  getAll
+  getHouse
 };

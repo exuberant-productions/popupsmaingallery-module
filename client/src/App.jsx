@@ -1,20 +1,25 @@
 import React from "react";
+import axios from "axios";
+import HomeDetail from "./HomeDetail.jsx";
+//import "./styles.css";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render() {
     return (
       <div>
-        <h1>Trulia</h1>
         <div>
-          <img
-            src="https://s3-us-west-1.amazonaws.com/mainpopupmodal/andres-iga-90533-unsplash.jpg"
-            height="500px"
-            width="500px"
-          />
+          <HomeDetail />
+          {/* <img
+            className="mainPic"
+            src={this.state.mainPopupModal}
+            height="430px"
+            width="720px"
+          /> */}
         </div>
       </div>
     );

@@ -1,0 +1,58 @@
+.homedetaildiv {
+  max-width: 75%;
+  margin: auto;
+}
+
+.mainPic {
+  width: 100%;
+
+}
+
+.navigation {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.header {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.house-specs {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.main-pic-request-info-div {
+  display: flex;
+}
+
+.mini-popup-pic-container {
+  border: solid black 2px;
+  flex: 2;
+}
+
+.request-info-container {
+  border: solid black 2px;
+  flex: 1;
+}
+
+.mini-carousel-container {
+  overflow: scroll;
+  border: solid black 2px;
+}
+
+.mini-carousel-card-container {
+  display: flex;
+}
+
+.detail-card img {
+  width: 100%;
+  height: 100px;
+}
+
+.detail-card {
+  width: 170px;
+  border: solid black 1px;
+  margin-right: 10px;
+}
