@@ -15,6 +15,7 @@ var shopEat = ['https://s3-us-west-1.amazonaws.com/mainpopupmodal/shop-eat/Scree
 
 var demographics = ['https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+2.16.33+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+2.24.04+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+2.31.41+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+2.38.44+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.12.42+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.33.56+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.41.12+PM+copy.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.49.06+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.49.06+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/demographics/Screen+Shot+2019-02-07+at+3.55.31+PM.png'];
 
+var streetView = ['https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.10.36+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.21.52+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.30.34+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.36.18+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.43.34+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+2.50.54+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+3.17.41+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+3.38.25+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+3.47.43+PM.png', 'https://s3-us-west-1.amazonaws.com/mainpopupmodal/street-view/Screen+Shot+2019-02-07+at+3.54.08+PM.png']
 
 //function to produce random number between 1-10
 var randomNumber = function () {
@@ -24,7 +25,7 @@ var randomNumber = function () {
 //create a function that will invoke a for loop to console.log 100 pieces of mock data
 var randomScriptGenerator = function () {
   for (var i = 0; i < 100; i++) {
-    console.log(`INSERT INTO mainViewPics (homeidentification, mainViewPictures) VALUES (${id}, '${mainPopupModal[randomNumber()]}');`)
+    console.log(`INSERT INTO mainHomeView (id, mapView, mainPopupModal, schools, crime, commute, shopEat, demographics, streetView) VALUES (${id}, '${mapView[randomNumber()]}', '${mainPopupModal[randomNumber()]}', '${schools[randomNumber()]}', '${crime[randomNumber()]}', '${commute[randomNumber()]}', '${shopEat[randomNumber()]}', '${demographics[randomNumber()]}', '${streetView[randomNumber()]}' );`)
     id++;
   }
 }

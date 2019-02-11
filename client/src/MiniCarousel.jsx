@@ -16,12 +16,42 @@ class MiniCarousel extends React.Component {
             this.props.onDetailCommentClick("mapView");
           }}
         />
-        <DetailCard url={this.props.home.mainPopupModal} />
-        <DetailCard url={this.props.home.schools} />
-        <DetailCard url={this.props.home.crime} />
-        <DetailCard url={this.props.home.commute} />
-        <DetailCard url={this.props.home.shopEat} />
-        <DetailCard url={this.props.home.demographics} />
+        <DetailCard
+          url={this.props.home.streetView}
+          onClick={() => {
+            this.props.onDetailCommentClick("streetView");
+          }}
+        />
+        <DetailCard
+          url={this.props.home.schools}
+          onClick={() => {
+            this.props.onDetailCommentClick("schools");
+          }}
+        />
+        <DetailCard
+          url={this.props.home.crime}
+          onClick={() => {
+            this.props.onDetailCommentClick("crime");
+          }}
+        />
+        <DetailCard
+          url={this.props.home.commute}
+          onClick={() => {
+            this.props.onDetailCommentClick("commute");
+          }}
+        />
+        <DetailCard
+          url={this.props.home.shopEat}
+          onClick={() => {
+            this.props.onDetailCommentClick("shopEat");
+          }}
+        />
+        <DetailCard
+          url={this.props.home.demographics}
+          onClick={() => {
+            this.props.onDetailCommentClick("demographics");
+          }}
+        />
       </div>
     );
   }
