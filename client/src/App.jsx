@@ -1,20 +1,17 @@
-import React from "react";
+import React from 'react';
+import HomeDetail from './HomeDetail';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render() {
     return (
       <div>
-        <h1>Trulia</h1>
         <div>
-          <img
-            src="https://s3-us-west-1.amazonaws.com/mainpopupmodal/andres-iga-90533-unsplash.jpg"
-            height="500px"
-            width="500px"
-          />
+          <HomeDetail />
         </div>
       </div>
     );

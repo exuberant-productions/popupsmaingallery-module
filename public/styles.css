@@ -1,0 +1,78 @@
+/* @font-face {
+  font-family: 'myHelvari';
+  src: url('ufonts.com_helvari.ttf');
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  font-style: normal;
+  font-family: myHelvari;
+} */
+
+.homedetaildiv {
+  max-width: 75%;
+  margin: auto;
+}
+
+.mainPic {
+  width: 100%;
+}
+
+img .mainPic:hover {
+  -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.774);
+  -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.767);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.781);
+}
+
+.navigation {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.header {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.house-specs {
+  border: solid black 2px;
+  height: 50px;
+}
+
+.main-pic-request-info-div {
+  display: flex;
+}
+
+.mini-popup-pic-container {
+  border: solid black 2px;
+  flex: 2;
+}
+
+.request-info-container {
+  border: solid black 2px;
+  flex: 1;
+}
+
+.mini-carousel-container {
+  overflow: scroll;
+  border: solid black 2px;
+}
+
+.mini-carousel-card-container {
+  display: flex;
+}
+
+.detail-card img {
+  width: 100%;
+  height: 100px;
+  border-radius: 8%;
+}
+
+.detail-card {
+  width: 170px;
+  border: solid black 1px;
+  margin-right: 10px;
+  border-radius: 5%;
+}
