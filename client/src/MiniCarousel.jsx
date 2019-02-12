@@ -1,5 +1,5 @@
-import React from "react";
-import DetailCard from "./DetailCard.jsx";
+import React from 'react';
+import DetailCard from './DetailCard';
 
 class MiniCarousel extends React.Component {
   constructor(props) {
@@ -13,43 +13,43 @@ class MiniCarousel extends React.Component {
         <DetailCard
           url={this.props.home.mapView}
           onClick={() => {
-            this.props.onDetailCommentClick("mapView");
+            this.props.onDetailCommentClick('mapView');
           }}
         />
         <DetailCard
           url={this.props.home.streetView}
           onClick={() => {
-            this.props.onDetailCommentClick("streetView");
+            this.props.onDetailCommentClick('streetView');
           }}
         />
         <DetailCard
           url={this.props.home.schools}
           onClick={() => {
-            this.props.onDetailCommentClick("schools");
+            this.props.onDetailCommentClick('schools');
           }}
         />
         <DetailCard
           url={this.props.home.crime}
           onClick={() => {
-            this.props.onDetailCommentClick("crime");
+            this.props.onDetailCommentClick('crime');
           }}
         />
         <DetailCard
           url={this.props.home.commute}
           onClick={() => {
-            this.props.onDetailCommentClick("commute");
+            this.props.onDetailCommentClick('commute');
           }}
         />
         <DetailCard
           url={this.props.home.shopEat}
           onClick={() => {
-            this.props.onDetailCommentClick("shopEat");
+            this.props.onDetailCommentClick('shopEat');
           }}
         />
         <DetailCard
           url={this.props.home.demographics}
           onClick={() => {
-            this.props.onDetailCommentClick("demographics");
+            this.props.onDetailCommentClick('demographics');
           }}
         />
       </div>

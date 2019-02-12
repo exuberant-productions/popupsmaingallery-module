@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class DetailCard extends React.Component {
   constructor(props) {
@@ -10,15 +10,12 @@ class DetailCard extends React.Component {
     return (
       <div onClick={this.props.onClick}>
         <div className="detail-card">
-          <img src={this.props.url} />
+          <img src={this.props.url} alt="" />
           <div>
             <p>Map View</p>
           </div>
           <div>
-            <p>
-              See the local terrain and how close this home is to parks and main
-              streets.
-            </p>
+            <p>See the local terrain and how close this home is to parks and main streets.</p>
           </div>
         </div>
       </div>

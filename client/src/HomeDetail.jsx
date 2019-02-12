@@ -1,25 +1,25 @@
-import React from "react";
-import axios from "axios";
-import MiniPopupPic from "./MiniPopupPic.jsx";
-import MiniCarousel from "./MiniCarousel.jsx";
+import React from 'react';
+import axios from 'axios';
+import MiniPopupPic from './MiniPopupPic';
+import MiniCarousel from './MiniCarousel';
 
 class HomeDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      home: null
+      home: null,
     };
   }
 
   componentWillMount() {
     const _this = this;
     this.serverRequest = axios
-      .get("http://localhost:3002/home/23")
-      .then(results => {
+      .get('http://localhost:3002/home/23')
+      .then((results) => {
         console.log(results);
         _this.setState({ home: results.data[0] });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -45,10 +45,7 @@ class HomeDetail extends React.Component {
             <div className="request-info-container">request info</div>
           </div>
           <div className="mini-carousel-container">
-            <MiniCarousel
-              home={this.state.home}
-              onDetailCommentClick={this.onDetailCardClick}
-            />
+            <MiniCarousel home={this.state.home} onDetailCommentClick={this.onDetailCardClick} />
           </div>
         </div>
       </div>
