@@ -14,13 +14,15 @@ const modalStyle = {
   right: '0px',
   zIndex: 50,
   backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  display: 'flex',
+  alignItems: 'center'
 }
 
 const innerModal = {
-  height: '80%',
-  width: '80%',
+  height: '90%',
+  width: '85%',
   margin: 'auto',
-  backgroundColor: 'white',
+  backgroundColor: 'white'
 }
 
 const ModalContent = (props) => {

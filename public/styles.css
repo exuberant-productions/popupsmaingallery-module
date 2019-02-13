@@ -72,25 +72,43 @@ p {
 }
 
 .modal-header {
-  border: solid black 1px;
+  border: solid #3b4144 1px;
   height: 50px;
+  background-color: #3b4144;
 }
 
 .modal-nav {
-  border: solid black 1px;
+  border: solid #cdd1d4 1px;
   height: 60px;
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
 }
 
 .navigation-header {
-  border: solid black 1px;
+  border: solid #cdd1d4 1px;
   height: 40px;
-  width: 99%;
+  width: 95%;
   margin: auto;
   background-color: whitesmoke;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.nav-item {
+  border: solid #cdd1d4 1px;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
 }

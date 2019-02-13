@@ -30,7 +30,6 @@ class HomeDetail extends React.Component {
   }
 
   togglePopup() {
-    console.log('Hi from togglepopup')
     this.setState({
       open: !this.state.open
     })
@@ -56,7 +55,7 @@ class HomeDetail extends React.Component {
             <MiniCarousel home={this.state.home} onDetailCommentClick={this.onDetailCardClick} onDetailCommentKey={this.onDetailCardKey} />
           </div>
         </div>
-        <div>
+        <div className="modal-content">
         {this.state.open && <ModalContent />}
         </div>
       </div>

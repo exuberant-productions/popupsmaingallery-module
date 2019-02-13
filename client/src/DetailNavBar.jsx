@@ -19,7 +19,7 @@ onNavBarClick(view) {
           <div className="modal-nav">
             <div className="navigation-header">
             {navItems.map((item, i) => {
-              return(<div onClick={() => {this.onNavBarClick(item)}} key={i}>
+              return(<div className="nav-item" onClick={() => {this.onNavBarClick(item)}} key={i}>
                 {item}
               </div>)
             })}
