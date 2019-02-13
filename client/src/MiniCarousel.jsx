@@ -11,43 +11,43 @@ class MiniCarousel extends React.Component {
     return (
       <div className="mini-carousel-card-container">
         <DetailCard
-          url={this.props.home.mapView}
+          imageLink={this.props.home.mapView}
           onClick={() => {
             this.props.onDetailCommentClick('mapView');
           }}
         />
         <DetailCard
-          url={this.props.home.streetView}
+          imageLink={this.props.home.streetView}
           onClick={() => {
             this.props.onDetailCommentClick('streetView');
           }}
         />
         <DetailCard
-          url={this.props.home.schools}
+          imageLink={this.props.home.schools}
           onClick={() => {
             this.props.onDetailCommentClick('schools');
           }}
         />
         <DetailCard
-          url={this.props.home.crime}
+          imageLink={this.props.home.crime}
           onClick={() => {
             this.props.onDetailCommentClick('crime');
           }}
         />
         <DetailCard
-          url={this.props.home.commute}
+          imageLink={this.props.home.commute}
           onClick={() => {
             this.props.onDetailCommentClick('commute');
           }}
         />
         <DetailCard
-          url={this.props.home.shopEat}
+          imageLink={this.props.home.shopEat}
           onClick={() => {
             this.props.onDetailCommentClick('shopEat');
           }}
         />
         <DetailCard
-          url={this.props.home.demographics}
+          imageLink={this.props.home.demographics}
           onClick={() => {
             this.props.onDetailCommentClick('demographics');
           }}

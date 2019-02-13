@@ -20,12 +20,6 @@ p {
   width: 100%;
 }
 
-img .mainPic:hover {
-  -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.774);
-  -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.767);
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.781);
-}
-
 .navigation {
   border: solid black 2px;
   height: 50px;
@@ -75,4 +69,28 @@ img .mainPic:hover {
   border: solid black 1px;
   margin-right: 10px;
   border-radius: 5%;
+}
+
+.modal-header {
+  border: solid black 1px;
+  height: 50px;
+}
+
+.modal-nav {
+  border: solid black 1px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-header {
+  border: solid black 1px;
+  height: 40px;
+  width: 99%;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

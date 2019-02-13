@@ -13,13 +13,15 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "css-loader": "^2.1.0",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1",
-    "react": "^16.8.1",
-    "express": "^4.16.4",
     "body-parser": "^1.18.3",
-    "mysql": "^2.16.0"
+    "css-loader": "^2.1.0",
+    "express": "^4.16.4",
+    "less-loader": "^4.1.0",
+    "mysql": "^2.16.0",
+    "prop-types": "^15.7.1",
+    "react": "^16.8.1",
+    "react-responsive-modal": "^3.6.0",
+    "style-loader": "^0.23.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

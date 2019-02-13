@@ -9,20 +9,14 @@ class MiniPopupPic extends React.Component {
       open: false
     };
   }
-togglePopup() {
-  this.setState({
-    open: !this.state.open
-  })
-}
+
   render() {
-    console.log(this.state)
-    console.log(this.props)
     return (
-      <div onClick={() => {this.props.toggle()}}>
-        {this.props.open ? <ModalContent /> : <img className="mainPic" src={this.props.home.mainPopupModal} />}
+      <div>
+        <img className="mainPic" src={this.props.home.mainPopupModal} />
       </div>
-    );
+    )
   }
 }
 
-export default withSwitch(MiniPopupPic);
+export default MiniPopupPic;

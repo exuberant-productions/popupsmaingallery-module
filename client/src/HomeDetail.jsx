@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import MiniPopupPic from './MiniPopupPic';
 import MiniCarousel from './MiniCarousel';
+import ModalContent from './ModalContent';
 
 class HomeDetail extends React.Component {
   constructor(props) {
@@ -28,6 +29,13 @@ class HomeDetail extends React.Component {
     console.log(cardClicked);
   }
 
+  togglePopup() {
+    console.log('Hi from togglepopup')
+    this.setState({
+      open: !this.state.open
+    })
+  }
+
   render() {
     if (this.state.home === null) {
       return null;
@@ -39,14 +47,17 @@ class HomeDetail extends React.Component {
           <div className="navigation">navigation</div>
           <div className="house-specs">house specs div</div>
           <div className="main-pic-request-info-div">
-            <div className="mini-popup-pic-container">
+            <div onClick={() => {this.togglePopup()}} className="mini-popup-pic-container">
               <MiniPopupPic home={this.state.home} />
             </div>
             <div className="request-info-container">request info</div>
           </div>
           <div className="mini-carousel-container">
-            <MiniCarousel home={this.state.home} onDetailCommentClick={this.onDetailCardClick} />
+            <MiniCarousel home={this.state.home} onDetailCommentClick={this.onDetailCardClick} onDetailCommentKey={this.onDetailCardKey} />
           </div>
+        </div>
+        <div>
+        {this.state.open && <ModalContent />}
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class DetailCard extends React.Component {
   constructor(props) {
@@ -7,10 +8,12 @@ class DetailCard extends React.Component {
   }
 
   render() {
+    const { onClick, imageLink } = this.props;
+
     return (
-      <div onClick={this.props.onClick}>
+      <div onClick={() => { onClick(); }} role="presentation">
         <div className="detail-card">
-          <img src={this.props.url} alt="" />
+          <img src={imageLink} alt="" />
           <div>
             <p>Map View</p>
           </div>
@@ -22,5 +25,12 @@ class DetailCard extends React.Component {
     );
   }
 }
+
+DetailCard.propTypes = {
+  clickImage: PropTypes.func,
+  imageLink: PropTypes.string,
+
+};
+
 
 export default DetailCard;

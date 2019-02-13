@@ -14,7 +14,6 @@ const withSwitch = (Component) => {
     })
   }
     render() {
-      console.log(this.state)
       return (
         <Component open={this.state.open} toggle={() => {this.togglePopup()}} {...this.props} />
       );
