@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeDetail from './HomeDetail';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);

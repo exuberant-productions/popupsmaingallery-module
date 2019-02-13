@@ -107,7 +107,7 @@ p {
   text-align: center;
   cursor: pointer;
   border-radius: 0.25rem;
-  background-color: lightgray;
+  background-color: #3b4144;
 }
 .close-button:hover {
   background-color: darkgray;

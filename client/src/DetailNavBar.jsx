@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from 'reactstrap';
+
 
 const navItems = ['Photos', 'Map', 'Street View', 'Schools', 'Crime', 'Commute', 'Shop & Eat', 'Demographics'];
 
@@ -15,7 +17,11 @@ onNavBarClick(view) {
   render() {
     return(
       <div>
-        <div className="modal-header" />
+        <div className="modal-header">
+          <div className="close-button">
+          <Button close><span aria-hidden="true">X</span></Button>
+          </div>
+        </div>
           <div className="modal-nav">
             <div className="navigation-header">
             {navItems.map((item, i) => {

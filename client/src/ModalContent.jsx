@@ -1,5 +1,6 @@
 import React from 'react';
 import DetailNavBar from './DetailNavBar';
+import ModalCarousel from './ModalCarousel';
 
 
 const modalStyle = {
@@ -25,12 +26,15 @@ const innerModal = {
   backgroundColor: 'white'
 }
 
-const ModalContent = (props) => {
+const ModalContent = () => {
   return(
     <div style={modalStyle}>
       <div style={innerModal}>
         <DetailNavBar />
       </div>
+      {/* <div>
+        <ModalCarousel />
+      </div> */}
     </div>
   )
 }
